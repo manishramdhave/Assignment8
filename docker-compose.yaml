@@ -14,7 +14,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - '/mnt/Slave:/usr/local/tomcat/webapps'
+      - '/mnt/Slave:/usr/local/tomcat/webapps/car-showroom-1.0'
 
 networks:
   Network-A:
