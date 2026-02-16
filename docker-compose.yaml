@@ -9,7 +9,8 @@ services:
       - '/mnt/Slave:/usr/local/apache2/htdocs'
   
   tomcat_service:
-    image: 'tomcat'
+    image: 'tomcat:9.0.86'
+    versions: 
     networks:
       - 'Network-B'
     ports:
