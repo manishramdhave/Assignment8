@@ -10,7 +10,6 @@ services:
   
   tomcat_service:
     image: 'tomcat'
-    versions: '9.0.115'
     networks:
       - 'Network-B'
     ports:
