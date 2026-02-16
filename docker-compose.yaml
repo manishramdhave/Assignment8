@@ -15,7 +15,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - '/mnt/Slave:/usr/local/tomcat/webapps/'
+      - '/mnt/tomcat:/usr/local/tomcat/webapps/'
 
 networks:
   Network-A:
