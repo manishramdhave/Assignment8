@@ -1,0 +1,16 @@
+services:
+  one:
+    image: 'httpd'
+    network: 'Network-A'
+    port:
+      - '80:80'
+    volume:
+      - '/mnt/MyWorkspace:/usr/local/apache2/htdocs'
+
+  two:
+    image: 'tomcat'
+    network: 'Network-B'
+    port:
+      - '8080:8080'
+    volume:
+      - '/mnt/MyWorkspace:/usr/local/tomcat/webapps'
