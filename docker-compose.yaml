@@ -12,7 +12,7 @@ services:
     networks:
       - 'Network-B'
     ports:
-      - '8080:8080'
+      - '8090:8080'
     volumes:
       - '/mnt/Slave:/usr/local/tomcat/webapps/car-showroom-1.0'
 
