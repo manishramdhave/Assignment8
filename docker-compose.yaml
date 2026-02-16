@@ -6,7 +6,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - '/mnt/MyWorkspace:/usr/local/apache2/htdocs'
+      - '/mnt/Slave:/usr/local/apache2/htdocs'
   tomcat_service:
     image: 'tomcat'
     networks:
@@ -14,7 +14,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - '/mnt/MyWorkspace:/usr/local/tomcat/webapps'
+      - '/mnt/Slave:/usr/local/tomcat/webapps'
 
 networks:
   Network-A:
