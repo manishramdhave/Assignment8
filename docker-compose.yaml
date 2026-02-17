@@ -13,7 +13,7 @@ services:
     networks:
       - 'Network-B'
     ports:
-      - '8080:8080'
+      - '8081:8080'
     volumes:
       - '/mnt/tomcat:/usr/local/tomcat/webapps/' 
 
