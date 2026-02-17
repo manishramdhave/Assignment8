@@ -19,7 +19,8 @@ pipeline {
 					sh "chmod -R 777 F1CarShowroom.war"
 					sh "chmod -R 777 index.html"
 					sh "sudo docker-compose up -d"
-					sh "sudo docker exec -itd slave-httpd_service-1 sudo chmod -R 777 /usr/local/apache2/htdocs"
+					sh "sudo docker exec -u root slave-httpd_service-1 chmod -R 777 /usr/local/apache2/htdocs"
+"
 				}
 			}
 		}
