@@ -3,7 +3,6 @@ services:
     image: 'httpd'
     networks:
       - 'Network-A'
-    command: ["sh", "-cd", "chmod -R 777 /usr/local/apache2/htdocs" ]
     ports:
       - '80:80'
     volumes:
