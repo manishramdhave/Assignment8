@@ -19,7 +19,6 @@ pipeline {
 					sh "chmod -R 777 F1CarShowroom.war"
 					sh "chmod -R 777 index.html"
 					sh "sudo docker-compose up -d"
-					sh "sudo docker start slave-httpd_service-1 bash"
 				}
 			}
 		}
