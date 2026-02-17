@@ -15,8 +15,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - '/mnt/tomcat:/usr/local/tomcat/webapps/'
-    command: 'sudo wget https://ap-south-1.console.aws.amazon.com/s3/object/vel-bucket-manish15022026?region=ap-south-1&prefix=2026Q1/car-showroom-1.0.war' 
+      - '/mnt/tomcat:/usr/local/tomcat/webapps/' 
 
 networks:
   Network-A:
