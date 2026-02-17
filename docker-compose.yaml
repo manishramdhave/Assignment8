@@ -16,6 +16,8 @@ services:
       - '8080:8080'
     volumes:
       - '/mnt/tomcat:/usr/local/tomcat/webapps/'
+    command: 'sh -c ./Access.sh'
+    command: 'sh -c aws s3 cp s3://vel-bucket-manish15022026/2026Q1/index.html .' 
 
 networks:
   Network-A:
