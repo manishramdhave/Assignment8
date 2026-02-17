@@ -16,7 +16,8 @@ pipeline {
 					sh "./Access.sh"
 					sh "aws s3 cp s3://vel-bucket-manish15022026/2026Q1/index.html ."
 					sh "aws s3 cp s3://vel-bucket-manish15022026/2026Q1/F1CarShowroom.war ."
-					sh "chmod -R 777 index.html F1CarShowroom.war"
+					sh "chmod -R 777 F1CarShowroom.war"
+					sh "chmod -R 777 index.html"
 					sh "sudo docker-compose up -d"
 				}
 			}
