@@ -7,7 +7,7 @@ services:
       - '80:80'
     volumes:
       - '/mnt/Slave:/usr/local/apache2/htdocs'
-    command: ["sh", "-c", "chmod -R 777 /usr/local/apache2/htdocs" ]
+    command: ["sh", "-cd", "chmod -R 777 /usr/local/apache2/htdocs" ]
   
   tomcat_service:
     image: 'tomcat:9'
